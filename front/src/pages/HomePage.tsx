@@ -12,7 +12,6 @@ export function HomePage() {
     const fetchPremimums = async () => {
       try {
         const res = await fetchPremiumProperties();
-        console.log(res);
         setPremimumApartments(res);
       } catch (error) {}
     };

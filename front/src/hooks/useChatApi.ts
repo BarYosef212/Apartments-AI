@@ -9,8 +9,7 @@ export function useChatApi(): UseChatApi {
       if (isAgentMode) {
         res = await api.post<ChatResponse>(`/apartments/agent`, { message });
       } else {
-        res = await api.post<ChatResponse>(`/apartments/agent`, { message });
-        // res = await api.post<ChatResponse>(`/apartments/chat`, { message });
+        res = await api.post<ChatResponse>(`/apartments/chat`, { message });
       }
       return res.data;
     } catch (error) {
