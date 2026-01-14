@@ -1,4 +1,5 @@
 export const COMPANY_NAME = 'פרמיום נכסים';
+export const TOKEN_KEY = 'apartments_admin_token';
 export const DEFAULT_PAGE_SIZE = 21;
 export const DEFAULT_CARD_SKELETON_COUNT = 21;
 export const HOUSE_PLACEHOLDER_IMAGE = 'https://reviveyouthandfamily.org/wp-content/uploads/2016/11/house-placeholder.jpg'

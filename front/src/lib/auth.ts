@@ -1,6 +1,5 @@
 import {jwtDecode} from 'jwt-decode';
-
-export const TOKEN_KEY = 'apartments_admin_token';
+import { TOKEN_KEY } from '@/config/constants';
 
 export function setToken(token: string) {
   window.localStorage.setItem(TOKEN_KEY, token);

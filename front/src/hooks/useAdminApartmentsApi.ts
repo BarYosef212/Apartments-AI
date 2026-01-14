@@ -22,9 +22,7 @@ export function useAdminApartmentsApi(): UseAdminApartmentsApi {
 
   const createApartment = async (payload: any) => {
     try {
-      await api.post(`/apartments`, payload, {
-        headers: getAuthHeaders(),
-      });
+      await api.post(`/apartments`, payload);
     } catch (error) {
       console.error("Error creating apartment:", error);
       throw error;
@@ -33,9 +31,7 @@ export function useAdminApartmentsApi(): UseAdminApartmentsApi {
 
   const updateApartment = async (id: string, payload: any) => {
     try {
-      await api.put(`/apartments/${id}`, payload, {
-        headers: getAuthHeaders(),
-      });
+      await api.put(`/apartments/${id}`, payload);
     } catch (error) {
       console.error("Error updating apartment:", error);
       throw error;
@@ -44,9 +40,7 @@ export function useAdminApartmentsApi(): UseAdminApartmentsApi {
 
   const deleteApartment = async (id: string) => {
     try {
-      await api.delete(`/apartments/${id}`, {
-        headers: getAuthHeaders(),
-      });
+      await api.delete(`/apartments/${id}`);
     } catch (error) {
       console.error("Error deleting apartment:", error);
       throw error;
