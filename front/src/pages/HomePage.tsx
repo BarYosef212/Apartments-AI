@@ -4,6 +4,7 @@ import { CarouselSpacing } from '../components/CarouselSpacing';
 import { useEffect, useState } from 'react';
 import { Apartment } from 'src/types';
 import { useApartmentsApi } from '../hooks/useApartmentsApi';
+import { COMPANY_NAME } from '@/config/constants';
 
 export function HomePage() {
   const [premimumApartments, setPremimumApartments] = useState<Apartment[]>([]);
@@ -22,12 +23,12 @@ export function HomePage() {
     <div className='mx-auto flex max-w-6xl flex-col px-4 pb-10 pt-6'>
       <main
         className={`flex flex-1 flex-col gap-10 md:flex-row md:items-center pb-10 ${
-          premimumApartments.length > 0 ? 'border-b-2':''
+          premimumApartments.length > 0 ? 'border-b-2' : ''
         }`}
       >
         <section className='flex-1 space-y-6 text-right'>
           <h1 className='text-4xl font-semibold tracking-tight text-gray-900 md:text-5xl'>
-            נדל&quot;ן פשוט וברור.
+            {COMPANY_NAME}
           </h1>
           <p className='max-w-xl text-sm text-muted-foreground'>
             אתר לחיפוש דירות, סינון לפי עיר ופרטים, וניהול מודעות בלוח ניהול
