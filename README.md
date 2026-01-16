@@ -92,7 +92,7 @@ apartments/
 
    ```bash
    git clone https://github.com/BarYosef212/Apartments-AI.git
-   cd apartments
+   cd Apartments-AI
    ```
 
 2. **Install backend dependencies**
