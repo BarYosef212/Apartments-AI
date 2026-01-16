@@ -13,7 +13,6 @@ import { EmbeddingController } from './embedding.controller';
 import { Apartment } from '../models/Apartment.model';
 import axios from 'axios';
 
-// Lazy-load EmbeddingController instance - only create when needed
 let ec: EmbeddingController | null = null;
 function getEmbeddingController(): EmbeddingController {
   if (!ec) {

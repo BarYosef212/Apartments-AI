@@ -35,7 +35,6 @@ export async function getApartments(filters: ApartmentFilters) {
     .lean();
 
   const totalResults = await Apartment.countDocuments(query);
-
   return {
     results,
     totalResults,
