@@ -243,8 +243,6 @@ The application uses JWT tokens for authentication:
 - Both projects have separate `tsconfig.json` files
 - UI components are built with Radix UI for accessibility
 
-[Add contribution guidelines here]
-
 ---
 
 **Note**: Make sure Ollama is running and the gemma2 model is available before using the chat functionality. The embedding models will be downloaded automatically on first use.
